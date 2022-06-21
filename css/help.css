@@ -1,0 +1,138 @@
+.codeScan{
+    margin-top: 30px;
+}
+.codeScan a{
+    margin-top: 30px;
+    margin-left:70px;
+    text-align: center;
+    width:209px;
+    height:55px;
+    display: block;
+    line-height:55px;
+    color: #ffffff;
+    font-size: 26px;
+    background: url("../img/assist/s2.png");
+    background-size: 100%;
+    border-radius: 5px;
+    letter-spacing:2px;
+    margin-bottom: 30px;
+}
+.codeScan .item{
+    display:inline-block;
+    margin-right: 120px;
+}
+.codeScan .code{
+    width: 301px;
+    height: 299px;
+    margin-left:50px;
+    margin-top: 20px;
+}
+
+.codeScan .item div{
+  width: 173px;
+  height:47px;
+  background: #f9fafc;
+  line-height:47px;
+  color: #000;
+  font-size: 18px;
+}
+.codeScan .item div img{
+  width: 24px;
+  height: 24px;  
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.download{
+    margin-top: 30px;
+    font-size: 14px;
+    color: #000;
+}
+.download p.title{
+    height:47px;
+    width: 273px;
+    background: #f9fafc;
+    line-height:47px;
+    color: #000;
+    font-size: 18px;
+}
+.download p img{
+    width: 24px;
+    height: 24px;  
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.download main{
+  display: flex;
+  margin-top: 20px;
+}
+.download .item{
+    width: 140px;
+    height:200px;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 140px;
+}
+
+.download .item img{
+    width: 75px;
+    height: 61px;
+}
+.download .item p{
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.download .item a{
+    position: absolute;
+    bottom: 30px;
+    display: inline-block;
+    width: 97px;
+    height:28px;
+    line-height:28px;
+    text-align: center;
+    border-radius:20px;
+    color: #0d7ca3;
+    border: 1px solid #59a7fb;
+    font-size: 12px;
+    font-weight: 600;
+}
+.download .item .pad{
+    text-align: center;
+    width: 97px;
+    height:27px;
+    border: none;
+    line-height:27px;
+    color: #ffffff;
+    background: url("../img/assist/s2.png");
+    background-size: 100%;
+    letter-spacing:2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

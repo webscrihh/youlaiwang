@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 的 CSS 文件 -->
+    <title>优来往</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/color.css">
+    <link rel="stylesheet" href="../../css/about.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+</head>
+
+<body>
+    <nav id="hd">
+        <div class="wp">
+            <div class="nav-logo">
+                <a href="https://levisit.commrun.com" class="logo"><img src="../../img/logo.png" alt=""></a>
+            </div>
+            <ul class="nav-bar">
+                <li><a href="../../index.html">首页</a></li>
+                <li><a  href="product.html">产品中心</a></li>
+                <li><a  href="help.html">帮助下载</a></li>
+                <li><a class="mycur" href="about.html">关于我们</a></li>
+            </ul>
+            <div class="nav-btn">
+                <a class="d" href="login.html">登录</a>
+                <a class="c" href="register.html">注册</a>
+            </div>
+        </div>
+    </nav>
+
+    
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" >
+                <img  src="../../img/aboutUs/banner.png" />
+              </div>
+            </div>
+          </div>
+    
+     <!-- shift alt f -->
+    
+     <div class="synopsis wp">
+        <h1>公司简介</h1>
+        <img src="../../img//aboutUs/s1.png" alt="">
+        <p >物语互联（广东物语互联科技有限公司）是一家以技术为核心驱动力，  以服务为创
+            新出发点，以实现万物连接为根本使命，致力于提供综合通讯服务与物联网相关解决
+            方案的创新型高新技术企业。  物语互联的主要成员均为行业资深从业者，累积了深厚
+            的国内外物联网与通讯行业的从业经验，使我们从创立之初就具备开阔的全球化视野。</p>
+     </div>   
+
+     <div class="contact wp">
+        <h1>联系我们</h1>
+        <img src="../../img//aboutUs/s1.png" alt="">
+       <p><img src="../../img/aboutUs/1.png" alt="">广东省东莞市南城街道黄金路1号天安数码城1栋1单元303室05</p>
+       <p><img src="../../img/aboutUs/2.png" alt="">18938235270</p>
+       <p><img src="../../img/aboutUs/3.png" alt="">lirw@wuyulink.com</p>
+       <!-- <img class="map" src="../../img/aboutUs/4.png" alt=""> -->
+
+       <div id="mapContainer"></div> 
+     </div>   
+
+
+
+
+    <div class="footer">
+        <div class="pattern">
+            <p>打造访客数字化管理平台，促进企业园区生态发展，为万物互联做出我们的贡献！</p>
+            <a href="#">免费试用</a>
+        </div>
+        <div class="footerDetails">
+            <div class="footerList">
+                <ul>
+                    <li>首页</li>
+                    <li>产品中心</li>
+                    <li>产品中心</li>
+                    <li>产品中心</li>
+                    <li>产品中心</li>
+                </ul>
+                <ul>
+                    <li>加入我们</li>
+                    <li>产品中心</li>
+                    <li>产品中心</li>
+                </ul>
+                <ul>
+                    <li>关于我们</li>
+                    <li>产品中心</li>
+                    <li>产品中心</li>
+                </ul>
+            </div>
+            <div class="introduce">
+                <div>
+                    <ul>
+                        <li>地址：广东省东莞市南城街道黄金路1号天安数a码城1栋1单元303室05</li>
+                        <li>微信：18938235270</li>
+                        <li>电话：TEL: 18938235270</li>
+                        <li>邮箱：lirw@wuyulink.com</li>
+                    </ul>
+                    <div class="weixin">
+                        <div>
+                            <img src="https://www.wuyulink.com/uploads/allimg/20220114/1-2201141F001406.jpg" alt="">
+                        </div>
+                        <p>关注微信公众平台</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&&type=webgl&ak=y6BfcQFXgxf5llU6dScGFDDWyM1uzGxt"></script>
+</body>
+
+</html>
+
+
+<script>
+
+var mySwiper = new Swiper('.swiper-container', {
+          //   loop: true,
+            autoplay:true
+          })
+          
+          var map = new BMapGL.Map("mapContainer");
+          var point = new BMapGL.Point(113.704529, 22.990784);
+          map.centerAndZoom(point, 15);
+          map.enableScrollWheelZoom(true);
+
+          var opts = {
+    width: 200,
+    height: 100,
+    title: '天安数码城'
+};
+var infoWindow = new BMapGL.InfoWindow('地址：广东省东莞市南城街道黄金路1号天安数码城1栋1单元303室05', opts);
+map.openInfoWindow(infoWindow, point);
+
+
+
+
+
+
+
+//getLocation()
+ function getLocation() {
+        var options = {
+            enableHighAccuracy: true,
+            maximumAge: 1000
+        };
+        alert('获取位置信息开始--------->');
+        if (navigator.geolocation) {
+            // 走到这里说明，浏览器支持geolocation，参数里有两个回调函数，一个是定位成功后的处理操作，一个是定位失败后的处理操作，另外一个参数没有研究过
+            navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
+        } else {
+            // 否则浏览器不支持geolocation
+            alert('您的浏览器不支持地理位置定位！');
+        }
+    }
+
+    // 成功时的回调函数
+    // 第一步获取定位成功返回的经纬度数据，然后结合百度那边提供的接口进行具体位置的转换，最后还有一个数据提交的方法，要跟自己的业务操作了
+    function onSuccess(position) {
+        // 返回用户位置
+        // 经度
+        var longitude = position.coords.longitude;
+        // 纬度
+        var latitude = position.coords.latitude;
+        alert('您的当前地址的经纬度：经度' + longitude + '，纬度' + latitude);
+        // 根据经纬度获取地理位置，不太准确，获取城市区域还是可以的
+        var map = new BMap.Map("allmap");
+        var point = new BMap.Point(longitude, latitude);
+        var gc = new BMap.Geocoder();
+        gc.getLocation(point, function (rs) {
+            var addComp = rs.addressComponents;
+            alert(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
+        });
+        // 这里后面可以写你的后续操作了
+     
+    }
+
+    // 失败时的回调函数
+    // 这里是错误提示信息
+    function onError(error) {
+        switch (error.code) {
+            case 1:
+                alert("位置服务被拒绝！");
+                break;
+            case 2:
+                alert("暂时获取不到位置信息！");
+                break;
+            case 3:
+                alert("获取信息超时！");
+                break;
+            case 4:
+                alert("未知错误！");
+                break;
+        }
+        // 这里后面可以写你的后续操作了，下面的经纬度是天安门的具体位置
+       
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

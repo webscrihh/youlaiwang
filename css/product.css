@@ -1,0 +1,158 @@
+.banner,.valueAddedServices,.hardwareServices{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+  h1{
+    color: #0d7ca3;
+    font-size:60px;
+    letter-spacing: 10px;
+    margin-top: 30px;
+}
+
+  h4{
+    color: #312d2d;
+    font-size:30px;
+    letter-spacing:4px;
+    margin-top: 30px;
+}
+.banner img{
+    width: 600px;
+    height: 370px;
+    margin-top: 30px;
+}
+.versions{
+    display:flex;
+    margin-top:40px;
+}
+.versions .item{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 30px;
+    border-radius: 40px;
+    box-shadow:1px 1px 10px 2px  #e5e9f4;
+}
+.versions .item .subTitle{
+    margin-bottom:20px;
+    text-align: center;
+}
+.versions .item .subTitle h5{
+    color: #9f9f9f;
+    font-size:20px;
+    font-weight: normal;
+}
+.versions .item .line{
+    width: 260px;
+    margin-top:20px;
+    border-bottom: 1px dashed #d4d4d4;
+    padding-bottom: 20px;
+}
+.versions .item .line p:first-child{
+    color:#828282;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.versions .item .line p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.base{
+    margin-top:100px;
+}
+.governmentCom{
+   margin-top: 50px;
+   margin-left: 30px;
+}
+.governmentCom p.red{
+    font-size: 20px;
+    margin: 15px 0;
+}
+.clique{
+    margin-top:100px;
+    margin-left: 30px;
+}
+.clique p.red{
+    font-size: 20px;
+    margin: 15px 0;
+}
+.valueAddedServices .icon,.hardwareServices .icon{
+    display: flex;
+    align-items: center;
+    margin-top:60px;
+    margin-bottom:60px;
+}
+.valueAddedServices .icon div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    height: 160px;
+    margin-right: 130px;
+    font-size: 14px;
+}
+.valueAddedServices .icon div img{
+    width: 95px;
+    height: 89px;
+    margin-bottom:20px;
+}
+.hardwareServices .icon div img{
+    width:182px;
+    height:209px;
+    margin-bottom:20px;
+    margin-top: 20px;
+}
+.hardwareServices .icon div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:250px;
+    height:531px;
+    margin-right:30px;
+    font-size: 14px;
+    padding:50px 10px;
+    border-radius:10px;
+    box-shadow:1px 1px 10px 2px  #e5e9f4;
+}
+
+.hardwareServices .icon div p:nth-of-type(1){
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hardwareServices .icon div p:nth-of-type(2){
+    width: 155px;
+}
+.hardwareServices .icon div a{
+   position: absolute;
+   bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
