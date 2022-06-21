@@ -349,6 +349,7 @@ nav {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px ;
+    letter-spacing: 4px;
 }
 .eqList>div div{
     width: 100%;
@@ -422,8 +423,10 @@ nav {
     padding: 55px 80px 68px 200px;
     color: #fff;
 }
-.footerList>ul{
-    width: 33.33%;
+
+.footerList>ul:nth-of-type(1){
+    width: 53.33%;
+    margin-right:100px;
 }
 .footerList>ul li{
     font-size: 14px;
@@ -432,17 +435,22 @@ nav {
 .footerList>ul li:first-child{
     font-size: 20px;
 }
+.introduce ul img{
+    width: 23px;
+    height: 23px;
+    margin-right:10px;
+}
 .introduce{
     padding: 55px 0;
 }
 .introduce>div{
-    width: 75%;
+    width: 85%;
     display: flex;
     border-left: 1px solid #fff;
     padding-left: 130px;
 }
 .introduce ul{
-    width: 70%;
+    width: 80%;
     color: #fff;
     font-size: 16px;
 }
@@ -463,4 +471,12 @@ nav {
 }
 .introduce img{
     width: 100%;
+}
+.footer .bottom{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #191919;
+    color: #fff;
+    font-size: 14px;
 }

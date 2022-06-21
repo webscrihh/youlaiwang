@@ -16,7 +16,7 @@
     color: #312d2d;
     font-size:30px;
     letter-spacing:4px;
-    margin-top: 30px;
+    margin-top:10px;
 }
 .banner img{
     width: 600px;
@@ -26,13 +26,13 @@
 .versions{
     display:flex;
     margin-top:40px;
+    justify-content: space-between;
 }
 .versions .item{
     display: flex;
-    justify-content:center;
     align-items: center;
     flex-direction: column;
-    padding: 100px 30px;
+    padding:40px 40px;
     border-radius: 40px;
     box-shadow:1px 1px 10px 2px  #e5e9f4;
 }
@@ -65,7 +65,7 @@
 }
 .governmentCom{
    margin-top: 50px;
-   margin-left: 30px;
+   /* margin-left: 30px; */
 }
 .governmentCom p.red{
     font-size: 20px;
@@ -73,7 +73,7 @@
 }
 .clique{
     margin-top:100px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 .clique p.red{
     font-size: 20px;
